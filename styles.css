@@ -1,0 +1,133 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Open Sans";
+  color: white;
+  background: url(images/bg-desktop.svg);
+  width: 100%;
+  height: 100%;
+  background-color: var(--Violet);
+  padding: 1rem 2rem;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  margin: 2rem;
+  width: 60%;
+}
+
+.logo {
+  margin-bottom: 3rem;
+}
+.illustration {
+  width: 100%;
+}
+
+.right {
+  margin: 10rem 2rem;
+  width: 40%;
+}
+
+.right h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.right p {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.right button {
+  width: 140px;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  color: var(--Violet);
+}
+.right button:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+  cursor: pointer;
+}
+
+.socials {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.icon {
+  padding: 0 0.5rem;
+}
+
+.icon:hover {
+  color: var(--Soft-Magenta);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+  body {
+    background: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    align-items: center;
+  }
+
+  .left {
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+    width: 100px;
+  }
+  .illustration {
+    width: 100%;
+  }
+  .right {
+    margin: 0;
+    margin-top: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .right button {
+    margin-bottom: 3rem;
+    width: 60%;
+    padding: 0.75rem 0;
+    border-radius: 1.75rem;
+  }
+
+  .socials {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+}
